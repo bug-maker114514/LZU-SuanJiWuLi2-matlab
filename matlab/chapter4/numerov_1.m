@@ -26,5 +26,6 @@ y = numerov(N,h,y,kk,S);
 plot(x,y,'r-');
 hold on;
 y_true = cos(2.*pi.*x);
+pbaspect([16,9,9]);
 plot(x,y_true,'b--');
 legend('数值解','解析解');
